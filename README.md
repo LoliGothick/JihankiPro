@@ -1,0 +1,2 @@
+# JihankiPro
+らいぱん
