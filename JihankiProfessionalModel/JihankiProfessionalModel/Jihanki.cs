@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reactive.Linq;
 using Cranberries.Util;
 
 namespace JihankiPro
@@ -66,7 +65,9 @@ namespace JihankiPro
                 products[index]--;
                 if (v >= products[index].Price)
                 {
+                    Console.WriteLine($"ガコン！{products[index].Name}が出てきた！");
                     v -= products[index].Price;
+                    Console.WriteLine($"今 {v}円 入ってます");
                     Console.WriteLine("もう一本買う？（y/n）");
                     if (Console.ReadLine() == "n") break;
                 }
